@@ -1,13 +1,5 @@
 
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-  Button,
+import { Button, Text, View, FlatList
 } from 'react-native';
 
 import React from 'react';
