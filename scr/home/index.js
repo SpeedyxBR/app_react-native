@@ -1,21 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Text, View, FlatList } from 'react-native';
-
-function ItemList({ item }) {
-  return (
-    <View
-      style={{
-        padding: 20,
-        marginBottom: 10,
-        backgroundColor: '#f9c2ff',
-        height: 50,
-        justifyContent: 'center',
-      }}
-    >
-      <Text>{item.name}</Text>
-    </View>
-  );
-}
+import {Text, View, FlatList } from 'react-native';  
+import ItemList from '../home/components/itemlist';
 
 function Home({ navigation }) {
   const DATA = [
@@ -42,14 +27,6 @@ function Home({ navigation }) {
         style={{ width: '100%' }}
         contentContainerStyle={{ alignItems: 'center' }}
       />
-
-      {/* Corrigido: usar apenas um onPress (handler addItem já definido) */}
-      <Button
-        title="Adicionar Atividade"
-        onPress={addItem}
-      />
-
-    </View>
   );
 }
 
