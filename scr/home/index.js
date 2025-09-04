@@ -8,7 +8,7 @@ function Home({ navigation }) {
   const [items, setItems] = useState(DATA);
 
   return (
-    <View style={{}}>
+    <View style={{styles.container}}>
       <FlatList ListFooterComponent={EmpatyList} /> data={items renderItem={({ ItemList })/>}}
     </View>
   );
